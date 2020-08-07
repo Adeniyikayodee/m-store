@@ -4,6 +4,7 @@
   "description": "An E-commerce webiste with multivendor",
   "main": "index.js",
   "scripts": {
+    "serve:local": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -12,6 +13,7 @@
   "author": "Kayode Addeniyi",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "nodemon": "^2.0.4"
   }
 }
