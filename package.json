@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "serve:local": "nodemon index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint ./*.js",
+    "lint:fix": "eslint --fix ./*.js"
   },
   "keywords": [
     "e-commerce"
@@ -15,5 +17,13 @@
   "dependencies": {
     "express": "^4.17.1",
     "nodemon": "^2.0.4"
+  },
+  "devDependencies": {
+    "eslint": "^7.6.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1"
   }
 }
