@@ -1,9 +1,8 @@
 # m-storePro
 
-This is an ecommerce website built on nodejs
+This is an ecommerce website built with nodejs (MEAN stack)
 members(buyers) will be able to create accounts, order for products and  pay.
 
-it's save and easy.
 
 components:
 mongodb
