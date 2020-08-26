@@ -1,7 +1,7 @@
 # m-storePro
 
-This is an ecommerce website built with nodejs (MEAN stack)
-members(buyers) will be able to create accounts, order for products and  pay.
+This is an ecommerce website built with nodejs 
+members(buyers) will be able to create accounts, order for products and pay.
 
 
 components:
@@ -11,7 +11,8 @@ Mongoose
 aws-sdk
 stripe
 eslint
-passport
+passport (twitter, facebook, linkedin and google)
 joi
 chai
 mocha
+
