@@ -2,6 +2,7 @@ const express = require('express')
 const router = express.Router()
 const { addUser } = require('../modules/user/service/userService')
 const { registerSchema } = require('../modules/user/validations/authValidation')
+const { joiErrorFormatter, mongooseErrorFormatter } = require('../utils/validationFormatter')
 
 /**
  * Shows page for user registration
