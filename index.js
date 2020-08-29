@@ -2,8 +2,6 @@ const express = require('express')
 const bodyParser = require('body-parser')
 require('./utils/db.config')
 
-//add twitter, facebook and  gooogle pasport login
-
 const authRoutes = require('./routes/authRoutes')
 const app = express()
 

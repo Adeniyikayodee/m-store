@@ -1,6 +1,5 @@
 const User = require('../models/User')
 
-
 /**
  * Create a new user and returns it
  * @param {Object} userInput - It is user input with all variables for user model
@@ -12,3 +11,4 @@ const addUser = async (userInput) => {
 }
 
 module.exports = { addUser }
+
