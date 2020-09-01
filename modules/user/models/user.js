@@ -10,6 +10,7 @@ const userSchema = mongoose.Schema({
   },
   email: {
     type: String,
+    lowercase: true,
     required: [true, 'Email is required'],
     maxlength: [128, 'Email can\'t be greater than 128 characters'],
     index: true
@@ -37,6 +38,12 @@ userSchema.pre('save', async function (next) {
   next()
 })
 
+userSchema.methods.checkPassword = async function (password) {
+  const result = await bcrypt.compare(password, this.password)
+  return result
+}
+
 const User = mongoose.model('users', userSchema)
 
 module.exports = User
+
