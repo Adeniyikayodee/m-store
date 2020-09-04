@@ -108,13 +108,7 @@ router.post('/login', guestMiddleware, (req, res, next) => {
  */
 router.get('/logout', authMiddleware, (req, res) => {
   req.logout()
-  req.session.flashdata = {
-    message: {
-      type: 'success',
-      body: 'logout success'
-    }
-  }
-
+  res.redirect('/')
 })
 
 module.exports = router
