@@ -32,9 +32,16 @@ const userSchema = mongoose.Schema({
 })
 
 /**
- * 
+ * validates unique email
  */
+userSchema.path('email').validate(async (email) => {
+  const emailCount = await mongoose.models.users.countDocuments({ email })
+  return !emailCount
+}, 'Email already exists')
 
+/**
+ * Encrypts password if value is changed
+ */
 userSchema.pre('save', async function (next) {
   if (!this.isModified('password')) next()
   this.password = await bcrypt.hash(this.password, 10)
@@ -46,7 +53,7 @@ userSchema.methods.checkPassword = async function (password) {
   return result
 }
 
-const User = mongoose.model('users', userSchema)
+const User = mongoose.model('User', userSchema)
 
 module.exports = User
 

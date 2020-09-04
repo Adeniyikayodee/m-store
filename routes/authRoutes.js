@@ -82,7 +82,7 @@ router.post('/login', guestMiddleware, (req, res, next) => {
       req.session.flashData = {
         message: {
           type: 'error',
-          body: info.error
+          body: info.message
         }
       }
       return res.redirect('/login')
@@ -108,6 +108,12 @@ router.post('/login', guestMiddleware, (req, res, next) => {
  */
 router.get('/logout', authMiddleware, (req, res) => {
   req.logout()
+  req.session.flashData = {
+    message: {
+      type: 'success',
+      body: 'Logout success'
+    }
+  }
   res.redirect('/')
 })
 
