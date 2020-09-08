@@ -16,7 +16,6 @@ const config = require('./utils/config')
 
 app.use(bodyParser.urlencoded({ extended: false }))
 app.set('view engine', 'pug')
-
 // app.set('trust proxy', 1)
 app.use(session({
   secret: '788a154e2a8d07c4cafdee4a7d6dff2d90ab2586',
@@ -45,7 +44,6 @@ app.locals.message = {} // Used in displaying alert
 app.locals.formData = {} // For prefilling data on form validation
 app.locals.errors = {} // Form validation errors
 
-
 app.use('/', authRoutes)
 
 app.get('/', flasherMiddleware, (req, res) => {
@@ -57,7 +55,7 @@ app.get('/homepage', authMiddleware, (req, res) => {
 })
 
 app.use((req, res, next) => {
-  res.status(404).render('400')
+  res.status(404).render('404')
 })
 
 app.listen(config.port, () => {
@@ -65,4 +63,3 @@ app.listen(config.port, () => {
 })
 
 module.exports = app
-
