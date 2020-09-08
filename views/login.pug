@@ -1,6 +1,6 @@
-extends ../master/default/layout
+extends partials/layout
 block content
-  .container.mt-5: .row: .col-md-4.offset-md-4
+  .container.mt-5
     h1 Login
     +alert(message)
 
@@ -32,3 +32,4 @@ block content
         +err(errors.password)
 
       button#submit.btn.btn-primary(type='submit') Submit
+      
