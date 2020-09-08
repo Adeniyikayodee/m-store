@@ -35,7 +35,7 @@ const userSchema = mongoose.Schema({
  * validates unique email
  */
 userSchema.path('email').validate(async (email) => {
-  const emailCount = await mongoose.models.users.countDocuments({ email })
+  const emailCount = await mongoose.models.User.countDocuments({ email })
   return !emailCount
 }, 'Email already exists')
 
