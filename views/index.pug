@@ -2,5 +2,5 @@ extends partials/layout
 block content
   .container.mt-4
     +alert(message)
-    h1 Hi, welcome #{user}, we offer the best e-commerce platform on Pluto and Mars.
+    h1 Hi, welcome #{user ? user.name : 'Guest'}, we offer the best e-commerce platform on Pluto and Mars.
 
