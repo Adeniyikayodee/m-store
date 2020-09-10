@@ -1,6 +1,6 @@
 # m-storePro
 
-This is an ecommerce app
+This is an ecommerce app {WORK IN PROGRESS, LOL]
 
 Steps to run the app
 =====================
