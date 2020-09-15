@@ -1,6 +1,6 @@
-extends partials/layout
+extends ../master/default/layout
 block content
-  .container.mt-5
+  .container.mt-5: .row: .col-lg-4.offset-lg-4
     h1 Registration
     +alert(message)
 
@@ -34,7 +34,7 @@ block content
           required
         )
         +err(errors.email)
-        small#emailHelp.form-text.text-muted Your credentials are save with us.
+        small#emailHelp.form-text.text-muted We'll never share your email with anyone else.
 
       .form-group
         label(for='password')
@@ -58,9 +58,8 @@ block content
           required
         )
 
-      .form-group.form-check
+      .form-group.form-check.mb-2
         input.form-check-input#agree(type='checkbox')
-        label.form-check-label(for='agree') I'm not a robot.
+        label.form-check-label(for='agree') I agree
 
       button#submit.btn.btn-primary(type='submit') Submit
-      
