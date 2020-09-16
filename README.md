@@ -1,6 +1,6 @@
 # m-storePro
 
-This is an ecommerce app {WORK IN PROGRESS, LOL]
+This is an ecommerce app for multi-vendors {WORK IN PROGRESS, LOL]
 
 Steps to run the app
 =====================
@@ -8,3 +8,11 @@ Steps to run the app
 * Connect local mongoDB to localhost 3000
 * backend: npm run serve:local
 ### THERE IS A PROBLEM WITH THE FRONTEND DISPLAY! I WILL FIX IT SOON, LOL  
+
+### Actually, the frontend isn't lit, but I gat you! LOL
+
+
+Reach me via: adeniyikayode22@gmail.com 
+
+
+See yah!!!
