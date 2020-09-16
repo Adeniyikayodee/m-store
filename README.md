@@ -12,7 +12,4 @@ Steps to run the app
 ### Actually, the frontend isn't lit, but I gat you! LOL
 
 
-Reach me via: adeniyikayode22@gmail.com 
-
-
 See yah!!!
