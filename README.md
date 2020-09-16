@@ -9,7 +9,3 @@ Steps to run the app
 * backend: npm run app
 ### THERE IS A PROBLEM WITH THE FRONTEND DISPLAY! I WILL FIX IT SOON, LOL  
 
-### Actually, the frontend isn't lit, but I gat you! LOL
-
-
-See yah!!!
