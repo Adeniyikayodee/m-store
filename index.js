@@ -50,7 +50,7 @@ app.use((req, res, next) => {
 /**
  * App level locals
  */
-app.locals.title = 'X Store'
+app.locals.title = 'M StorePro'
 app.locals.message = {} // Used in displaying alert
 app.locals.formData = {} // For prefilling data on form validation
 app.locals.errors = {} // Form validation errors

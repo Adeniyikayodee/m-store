@@ -11,4 +11,3 @@ const addUser = async (userInput) => {
 }
 
 module.exports = { addUser }
-

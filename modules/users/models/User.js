@@ -32,7 +32,7 @@ const userSchema = mongoose.Schema({
 })
 
 /**
- * validates unique email
+ * Validates unique email
  */
 userSchema.path('email').validate(async (email) => {
   const emailCount = await mongoose.models.User.countDocuments({ email })
@@ -56,4 +56,3 @@ userSchema.methods.checkPassword = async function (password) {
 const User = mongoose.model('User', userSchema)
 
 module.exports = User
-
