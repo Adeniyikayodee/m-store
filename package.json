@@ -1,10 +1,10 @@
 {
-  "name": "x-store",
+  "name": "m-store",
   "version": "1.0.0",
   "description": "An ecommerce webisite with multivendor",
   "main": "index.js",
   "scripts": {
-    "serve:local": "nodemon index.js",
+    "app": "nodemon index.js",
     "serve:debug": "nodemon --inspect index.js",
     "test": "mocha tests/*.js --exit",
     "test:chrome": "node test_browser/index.js",
@@ -17,7 +17,7 @@
   "keywords": [
     "ecommerce"
   ],
-  "author": "Namaste Programming",
+  "author": "Kayode Adeniyi",
   "license": "ISC",
   "dependencies": {
     "@hapi/joi": "^17.1.1",
